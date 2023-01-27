@@ -2,7 +2,7 @@
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   @media (min-width: $M) {
@@ -30,7 +30,7 @@ html {
   font-size: 12px;
   font-weight: $font-weight-regular;
   line-height: 1.5;
-  color: $color-dark-grey;
+  color: $color-text-primary;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   -moz-osx-font-smoothing: grayscale;
@@ -43,7 +43,7 @@ html {
 
 body {
   margin: 0;
-  background-color: $color-bg;
+  background-color: $bg-primary;
 }
 
 @for $index from 1 through 6 {
