@@ -2,7 +2,7 @@
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
   @media (min-width: $M) {
@@ -53,6 +53,11 @@ body {
     font-weight: 500;
     color: $color-black;
   }
+}
+
+img{
+  width: 100%;
+  height: auto;
 }
 
 input,
