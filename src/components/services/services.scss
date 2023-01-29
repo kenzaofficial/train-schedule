@@ -1,0 +1,114 @@
+.services {
+  padding: 15px 0 60px;
+  @include media(L) {
+    padding: 32px 0 60px;
+  }
+}
+
+.services__container {
+  padding: 0 7px;
+  @include media(L) {
+    padding: 0 50px;
+  }
+}
+
+.services__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+    @include media(M) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.card-services {
+  border: 2px solid #f6f6f6;
+  border-radius: 6px;
+  background-color: $bg-light;
+  @include media(M) {
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+}
+
+.card-services__img {
+  display: none;
+  width: auto;
+  @include media(M) {
+    display: block;
+    flex-shrink: 0;
+    width: 269px;
+    height: 158px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+}
+
+.card-services__content {
+  display: grid;
+  align-items: center;
+  padding: 14px;
+  background-repeat: no-repeat;
+  background-position: top 18px right 15px;
+  grid-template-columns: 24px auto;
+  gap: 9px 15px;
+  @include media(M) {
+    width: 100%;
+    margin: 0;
+    padding: 26px 55px 20px 30px;
+    border: 2px solid #f6f6f6;
+    border-left: none;
+    background-position: top 30px right 54px;
+    gap: 15px;
+  }
+  @include media(L) {
+    padding-bottom: 15px;
+    background-position: top 30px right 54px;
+    background-size: 170px;
+  }
+  img {
+    width: auto;
+    @include media(L) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.card-services__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  @include media(L) {
+    font-size: 24px;
+    line-height: 30px;
+    span {
+      display: none;
+    }
+  }
+}
+
+.card-services__description {
+  font-size: 12px;
+  line-height: 18px;
+  grid-column: 1/-1;
+  @include media(L) {
+    max-width: 410px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.card-serivces__link {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-link;
+  @include media(L) {
+    grid-column: -1/-1;
+    align-self: flex-end;
+    justify-self: flex-end;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -7,10 +7,11 @@
   {{ head('index', 'Расписание поездов') }}
 
   <body>
-      {% include 'components/header/header.njk' %}
+    {% include 'components/header/header.njk' %}
     <main>
-         {% include 'components/hero/hero.njk' %}
-         {% include 'components/advantages/advantages.njk' %}
+      {% include 'components/hero/hero.njk' %}
+      {% include 'components/advantages/advantages.njk' %}
+      {% include 'components/services/services.njk' %}
     </main>
     {{ scripts('index') }}
   </body>

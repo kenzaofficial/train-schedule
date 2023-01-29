@@ -16,19 +16,20 @@
 .advantages__list {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding: 13px 10px;
   max-width: 500px;
-  gap: 5px 10px;
-  font-size: 10px;
-  line-height: 12px;
+  margin: 0 auto;
+  padding: 14px 10px;
   border-radius: 6px;
   background: $gradient-primary;
+  font-size: 10px;
+  line-height: 12px;
+  gap: 5px;
   @include media(M) {
-    padding: 15px 30px;
     max-width: none;
+    padding: 15px 30px;
     font-size: 18px;
     line-height: 28px;
+    column-gap: 20px;
   }
   @include media(XL) {
     justify-content: space-between;
@@ -51,7 +52,6 @@
         height: 60px;
       }
     }
-
     h3 {
       font-weight: 400;
       color: $color-text-secondary;
