@@ -1,7 +1,8 @@
 .services {
   padding: 15px 0 60px;
+  background-color: $bg-light;
   @include media(L) {
-    padding: 32px 0 60px;
+    padding: 32px 0 120px;
   }
 }
 
@@ -14,7 +15,7 @@
 
 .services__item {
   &:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     @include media(M) {
       margin-bottom: 15px;
     }
@@ -28,6 +29,7 @@
   @include media(M) {
     display: flex;
     align-items: center;
+    min-height: 158px;
     border: none;
   }
 }
@@ -94,7 +96,7 @@
   line-height: 18px;
   grid-column: 1/-1;
   @include media(L) {
-    max-width: 410px;
+    max-width: 440px;
     font-size: 16px;
     line-height: 22px;
   }
@@ -104,6 +106,13 @@
   font-size: 12px;
   line-height: 18px;
   color: $color-link;
+  transition: 0.3s;
+  &:hover {
+    color: $color-hover;
+  }
+  &:active {
+    color: $color-text-primary;
+  }
   @include media(L) {
     grid-column: -1/-1;
     align-self: flex-end;

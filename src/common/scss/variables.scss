@@ -18,6 +18,7 @@ $color-text-primary: $color-black;
 $color-text-secondary: $color-white;
 $color-text-thirdly: $color-dark;
 $color-link: $color-blue;
+$color-hover: $color-orange;
 
 //backgrounds
 $bg-primary: $color-gray;
@@ -25,7 +26,11 @@ $bg-secondary: $color-orange;
 $bg-light: $color-white;
 
 //gradiens
-$gradient-primary:linear-gradient(90.2deg, rgba(255, 255, 255, 0.38) 13.09%, rgba(255, 255, 255, 0.27) 114.59%);
+$gradient-primary: linear-gradient(
+  90.2deg,
+  rgba(255, 255, 255, 0.38) 13.09%,
+  rgba(255, 255, 255, 0.27) 114.59%
+);
 
 // fonts
 $font-family-base: "Onest", "Helvetica", "Arial", sans-serif;
