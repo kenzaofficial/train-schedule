@@ -1,0 +1,68 @@
+.hero {
+  padding-bottom: 15px;
+  @include media(S) {
+    padding: 30px 0;
+  }
+  @include media(L) {
+    padding: 50px 0;
+  }
+  @include media(XL) {
+    min-height: 335px;
+  }
+  h1 {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 24px;
+    @include media(M) {
+      font-size: 36px;
+      line-height: 48px;
+    }
+    @include media(L) {
+      font-size: 48px;
+      line-height: 64px;
+    }
+  }
+  p {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    @include media(M) {
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+}
+
+.hero__container {
+  @include media(S) {
+    position: relative;
+  }
+  @include media(XL) {
+    margin-top: 15px;
+  }
+}
+
+.hero__img {
+  display: none;
+  @include media(S) {
+    position: absolute;
+    top: -130px;
+    right: 0;
+    display: block;
+    max-width: 300px;
+  }
+  @include media(M) {
+    top: -140px;
+    max-width: 400px;
+  }
+  @include media(L) {
+    top: -160px;
+    max-width: 470px;
+  }
+  @include media(XL) {
+    top: -130px;
+    right: 45px;
+    max-width: 470px;
+  }
+}

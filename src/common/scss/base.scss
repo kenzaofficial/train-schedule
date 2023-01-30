@@ -2,7 +2,7 @@
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
   @media (min-width: $M) {
@@ -11,6 +11,19 @@
   @media (min-width: $XL) {
     padding: 0 50px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 *,
@@ -53,6 +66,11 @@ body {
     font-weight: 500;
     color: $color-black;
   }
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 input,

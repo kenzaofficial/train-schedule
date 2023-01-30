@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 6px;
+  @include media(S) {
+    font-size: 15px;
+    line-height: 13px;
+  }
+  span {
+    font-size: 7px;
+    line-height: 5px;
+    @include media(S) {
+      font-size: 14px;
+      line-height: 12px;
+    }
+  }
+  img {
+    width: 24px;
+    margin-right: 4px;
+    @include media(S) {
+      width: 46px;
+      margin-right: 7px;
+    }
+  }
+}

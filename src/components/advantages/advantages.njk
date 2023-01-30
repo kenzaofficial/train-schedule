@@ -1,0 +1,11 @@
+{% from 'components/list/list.njk' import list %} 
+{% import './data.njk' as data%}
+<section class="advantages">
+  <div class="advantages__container container">
+    <ul class="advantages__list">
+      {% for advantage in data.advantages %}
+         {{ list( img=advantage.img, title=advantage.title) }}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
